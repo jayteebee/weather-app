@@ -25,7 +25,6 @@ export default function Home() {
 
   return (
     <>
-      <h1>Placeholder Header For Home</h1>
       <SearchBar onSearch={handleSearch} />
       {/** COME BACK TO THIS */}
       {errorMessage && <p style={{color: "red"}} >{errorMessage}</p>}
