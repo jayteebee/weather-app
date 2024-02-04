@@ -26,6 +26,7 @@ export default function Home() {
     <>
       <h1>Placeholder Header For Home</h1>
       <SearchBar onSearch={handleSearch} />
+      {errorMessage && <p style={{color: "red"}} >{errorMessage}</p>}
     </>
   );
 }
