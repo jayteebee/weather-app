@@ -27,7 +27,6 @@ export default function Home() {
   return (
     <>
       <SearchBar onSearch={handleSearch} />
-      {/** COME BACK TO THIS */}
       {errorMessage && <p style={{color: "red"}} >{errorMessage}</p>}
       <WeatherDisplay data={weatherData} />
     </>
