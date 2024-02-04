@@ -15,13 +15,26 @@ const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
 }
 
     return (
-        <Box component="form" onSubmit={handleSubmit} noValidate>
+        <Box component="form" onSubmit={handleSubmit} noValidate sx={{mt: 1}}>
             <TextField
+            variant="outlined"
+            margin="normal"
+            required
+            fullWidth
+            id="city"
+            label="City Name"
+            name="city"
+            autoComplete="city"
+            autoFocus
             value={city}
             onChange={(e) => setCity(e.target.value)}
             />
             <Button
             type="submit"
+            fullWidth
+            variant="contained"
+            sx={{ mt: 3, mb: 2 }}
+            color="secondary"
             >
                 Search
             </Button>
