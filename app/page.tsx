@@ -2,6 +2,7 @@
 import { fetchWeather } from "@/utils/fetchWeather";
 import { useState } from "react";
 import SearchBar from "@/components/SearchBar";
+import WeatherDisplay from "@/components/WeatherDisplay";
 
 export default function Home() {
   const [weatherData, setWeatherData] = useState(null);
@@ -28,6 +29,7 @@ export default function Home() {
       <SearchBar onSearch={handleSearch} />
       {/** COME BACK TO THIS */}
       {errorMessage && <p style={{color: "red"}} >{errorMessage}</p>}
+      <WeatherDisplay />
     </>
   );
 }
