@@ -13,7 +13,6 @@ export default function Home() {
       setErrorMessage("");
       const data = await fetchWeather(city);
       setWeatherData(data);
-      console.log(data); // placeholder
     } catch (err) {
       console.error("Failed to fetch the weather: ", err);
       if (err instanceof Error) {

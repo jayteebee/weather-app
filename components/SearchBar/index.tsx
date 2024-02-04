@@ -7,7 +7,6 @@ type SearchBarProps = {
 
 const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
   const [city, setCity] = useState("");
-  console.log("🚀 ~ city:", city);
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
