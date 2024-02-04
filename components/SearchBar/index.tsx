@@ -18,7 +18,9 @@ const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
             <TextField
             value={city}
             />
-            <Button>
+            <Button
+            type="submit"
+            >
                 Search
             </Button>
         </Box>
