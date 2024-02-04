@@ -1,4 +1,4 @@
-import { Typography } from '@mui/material';
+import { Card, CardContent, Grid, Typography } from '@mui/material';
 import React from 'react'
 
 type WeatherData = {
@@ -26,7 +26,27 @@ type WeatherDisplayProps = {
 const WeatherDisplay: React.FC<WeatherDisplayProps> = ({data}) => {
     if (!data) return <Typography>Search a location for its weather.</Typography>
   return (
-    <div>index</div>
+    <Card>
+        <CardContent>
+            <Typography>
+
+            </Typography>
+
+            <Grid>
+                <Grid>
+                    <Typography> </Typography>
+                </Grid>
+
+                <Grid>
+                <Typography> </Typography>
+                </Grid>
+
+                <Grid>
+                <Typography> </Typography>
+                </Grid>
+            </Grid>
+        </CardContent>
+    </Card>
   )
 }
 
