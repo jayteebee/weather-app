@@ -29,7 +29,7 @@ const WeatherDisplay: React.FC<WeatherDisplayProps> = ({data}) => {
     <Card>
         <CardContent>
             <Typography>
-
+                Weather in {data.location.name}, {data.location.region}, {data.location.country}, as of {data.current.last_updated}
             </Typography>
 
             <Grid>
