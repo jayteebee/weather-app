@@ -16,8 +16,11 @@ const handleSearch = async (city: string) => {
 }
 
   return (
+<>
 
-      <h1>Placeholder Header For Home</h1>
+<h1>Placeholder Header For Home</h1>
+<button onClick={() => handleSearch("London")}>Search</button>
+</>
 
   );
 }
