@@ -1,8 +1,8 @@
 "use client";
-import { fetchWeather } from "@/utils/fetchWeather";
+import { fetchWeather } from "../utils/fetchWeather";
 import { useState } from "react";
-import SearchBar from "@/components/SearchBar";
-import WeatherDisplay from "@/components/WeatherDisplay";
+import SearchBar from "../components/SearchBar"
+import WeatherDisplay from "../components/WeatherDisplay";
 
 export default function Home() {
   const [weatherData, setWeatherData] = useState(null);
