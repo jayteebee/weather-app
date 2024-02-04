@@ -10,7 +10,7 @@ export const fetchWeather = async (city: string) => {
             throw new Error('City not found. Please check spelling and try again.');
         } else {
             console.error('Error fetching weather data:', error);
-            throw  error;
+            throw  new Error(error);
         }
     }
 };
