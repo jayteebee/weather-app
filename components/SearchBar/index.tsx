@@ -7,6 +7,7 @@ type SearchBarProps = {
 
 const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
     const [city, setCity] = useState("");
+    console.log("🚀 ~ city:", city)
 
 const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -17,6 +18,7 @@ const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         <Box component="form" onSubmit={handleSubmit} noValidate>
             <TextField
             value={city}
+            onChange={(e) => setCity(e.target.value)}
             />
             <Button
             type="submit"
