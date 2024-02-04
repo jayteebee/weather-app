@@ -7,3 +7,5 @@ type SearchBarProps = {
 const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
 
 }
+
+export default SearchBar;

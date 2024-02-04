@@ -1,6 +1,7 @@
 "use client";
 import { fetchWeather } from "@/utils/fetchWeather";
 import { useState } from "react";
+import SearchBar from "@/components/SearchBar";
 
 export default function Home() {
   const [weatherData, setWeatherData] = useState(null);
@@ -24,6 +25,7 @@ export default function Home() {
   return (
     <>
       <h1>Placeholder Header For Home</h1>
+      <SearchBar onSearch={handleSearch} />
     </>
   );
 }
