@@ -32,9 +32,9 @@ const WeatherDisplay: React.FC<WeatherDisplayProps> = ({data}) => {
                 Weather in {data.location.name}, {data.location.region}, {data.location.country}, as of {data.current.last_updated.slice(-5)}
             </Typography>
 
-            <Grid>
-                <Grid>
-                    <Typography> </Typography>
+            <Grid container spacing={2}>
+                <Grid item xs={12} sm={6} md={3}>
+                    <Typography color="textSecondary" variant='body2'>Temperature: {data.current.temp_c}°C</Typography>
                 </Grid>
 
                 <Grid>
