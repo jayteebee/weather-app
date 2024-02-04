@@ -4,6 +4,7 @@ import { useState } from "react";
 
 export default function Home() {
 const [weatherData, setWeatherData] = useState(null)
+const [errorMessage, setErrorMessage] = useState("")
 
 const handleSearch = async (city: string) => {
   try {
@@ -11,7 +12,12 @@ const handleSearch = async (city: string) => {
     setWeatherData(data)
     console.log(data) // placeholder
   } catch (err) {
-    console.error(err)
+    console.error("Failed to fetch the weather: ", err)
+    if (err instanceof Error) {
+      setErrorMessage(err.message)
+    } else {
+      setErrorMessage("An unknown error occurred")
+    }
   }
 }
 
@@ -19,7 +25,7 @@ const handleSearch = async (city: string) => {
 <>
 
 <h1>Placeholder Header For Home</h1>
-<button onClick={() => handleSearch("London")}>Search</button>
+
 </>
 
   );
