@@ -29,7 +29,7 @@ export default function Home() {
       <SearchBar onSearch={handleSearch} />
       {/** COME BACK TO THIS */}
       {errorMessage && <p style={{color: "red"}} >{errorMessage}</p>}
-      <WeatherDisplay />
+      <WeatherDisplay data={weatherData} />
     </>
   );
 }
