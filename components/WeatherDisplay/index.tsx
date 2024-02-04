@@ -39,6 +39,7 @@ const WeatherDisplay: React.FC<WeatherDisplayProps> = ({data}) => {
 
                 <Grid item xs={12} sm={6} md={3}>
                     <Typography color="textSecondary" variant='body2'>Condition: {data.current.condition.text}</Typography>
+                    <img src={data.current.condition.icon} alt="Weather Icon" />
                 </Grid>
 
                 <Grid item xs={12} sm={6} md={3}>
