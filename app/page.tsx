@@ -10,6 +10,7 @@ export default function Home() {
 
   const handleSearch = async (city: string) => {
     try {
+      setErrorMessage("");
       const data = await fetchWeather(city);
       setWeatherData(data);
       console.log(data); // placeholder
