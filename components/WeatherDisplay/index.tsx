@@ -38,15 +38,15 @@ const WeatherDisplay: React.FC<WeatherDisplayProps> = ({data}) => {
                 </Grid>
 
                 <Grid item xs={12} sm={6} md={3}>
-                    <Typography color="textSecondary" variant='body2'>Temperature: {data.current.temp_c}°C</Typography>
+                    <Typography color="textSecondary" variant='body2'>Condition: {data.current.condition.text}</Typography>
                 </Grid>
 
                 <Grid item xs={12} sm={6} md={3}>
-                    <Typography color="textSecondary" variant='body2'>Temperature: {data.current.temp_c}°C</Typography>
+                    <Typography color="textSecondary" variant='body2'>Wind: {data.current.wind_kph} kph</Typography>
                 </Grid>
 
                 <Grid item xs={12} sm={6} md={3}>
-                    <Typography color="textSecondary" variant='body2'>Temperature: {data.current.temp_c}°C</Typography>
+                    <Typography color="textSecondary" variant='body2'>Humidity: {data.current.humidity}%</Typography>
                 </Grid>
             </Grid>
         </CardContent>
