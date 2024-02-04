@@ -1,3 +1,4 @@
+import { Typography } from '@mui/material';
 import React from 'react'
 
 type WeatherData = {
@@ -18,10 +19,15 @@ type WeatherData = {
     };
 }
 
-const index = (props: Props) => {
+type WeatherDisplayProps = {
+    data: WeatherData | null;
+};
+
+const WeatherDisplay: React.FC<WeatherDisplayProps> = ({data}) => {
+    if (!data) return <Typography>Search a location for its weather.</Typography>
   return (
     <div>index</div>
   )
 }
 
-export default index
+export default WeatherDisplay;
