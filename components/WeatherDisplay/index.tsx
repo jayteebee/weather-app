@@ -37,12 +37,16 @@ const WeatherDisplay: React.FC<WeatherDisplayProps> = ({data}) => {
                     <Typography color="textSecondary" variant='body2'>Temperature: {data.current.temp_c}°C</Typography>
                 </Grid>
 
-                <Grid>
-                <Typography> </Typography>
+                <Grid item xs={12} sm={6} md={3}>
+                    <Typography color="textSecondary" variant='body2'>Temperature: {data.current.temp_c}°C</Typography>
                 </Grid>
 
-                <Grid>
-                <Typography> </Typography>
+                <Grid item xs={12} sm={6} md={3}>
+                    <Typography color="textSecondary" variant='body2'>Temperature: {data.current.temp_c}°C</Typography>
+                </Grid>
+
+                <Grid item xs={12} sm={6} md={3}>
+                    <Typography color="textSecondary" variant='body2'>Temperature: {data.current.temp_c}°C</Typography>
                 </Grid>
             </Grid>
         </CardContent>
